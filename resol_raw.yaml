@@ -1,0 +1,222 @@
+resol:
+    resol_source: '0x7821'
+    resol_destination: '0x0010'
+    resol_command: '0x0100'
+
+    Solar_Temperatur_Kollektor_aussen_S1:
+        type: num
+        knx_dpt: 9
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+        knx_send: 15/0/0
+        knx_reply: 15/0/0
+        json_variable: 'Temperatur Sensor 1'
+        resol_offset: 0
+        resol_bituse: 15
+        resol_factor: '0.1'
+
+    Solar_Temperatur_Heizkreis_Ruecklauf_ungemischt_S8:
+        type: num
+        knx_dpt: 9
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+#        knx_send: 15/0/1
+#        knx_reply: 15/0/1
+        json_variable: 'Temperatur Sensor 8'
+        resol_offset: 14
+        resol_bituse: 15
+        resol_factor: '0.1'
+
+    Solar_Temperatur_Heizkreis_Ruecklauf_gemischt_S9:
+        type: num
+        knx_dpt: 9
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+#        knx_send: 15/0/2
+#        knx_reply: 15/0/2
+        json_variable: 'Temperatur Sensor 9'
+        resol_offset: 16
+        resol_bituse: 15
+        resol_factor: '0.1'
+
+    Solar_Fehlermeldung_Bit:
+        type: bool
+        knx_dpt: 1
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+        knx_send: 15/0/3
+        knx_reply: 15/0/3
+        json_variable: 'Meldungen'
+        resol_offset: 38
+        resol_bituse: 16
+
+    Solar_Heizkreis1_Status:
+        type: bool
+        knx_dpt: 1
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+#        knx_send: 15/0/4
+#        knx_reply: 15/0/4
+        json_variable: 'Status HK1 Modul'
+        resol_offset: 46
+        resol_bituse: 16
+
+    Solar_Temperatur_Kombispeicher_mitte_S7:
+        type: num
+        knx_dpt: 9
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+        knx_send: 15/0/5
+        knx_reply: 15/0/5
+        json_variable: 'Temperatur Sensor 7'
+        resol_offset: 12
+        resol_bituse: 15
+        resol_factor: '0.1'
+
+    Solar_Temperatur_Kombispeicher_unten_S2:
+        type: num
+        knx_dpt: 9
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+        knx_send: 15/0/6
+        knx_reply: 15/0/6
+        json_variable: 'Temperatur Sensor 2'
+        resol_offset: 2
+        resol_bituse: 15
+        resol_factor: '0.1'
+
+    Sensor_Temperatur_Heizkreis1_Soll_S18:
+        type: num
+        knx_dpt: 9
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+#        knx_send: 15/0/7
+#        knx_reply: 15/0/7
+        json_variable: 'Vorlauf Soll HK1 Modul Sensor 18'
+        resol_offset: 44
+        resol_bituse: 15
+        resol_factor: '0.1'
+
+    Solar_Fehlermaske:
+        type: num
+        knx_dpt: 5
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+#        knx_send: 15/0/8
+#        knx_reply: 15/0/8
+        json_variable: 'Fehlermaske'
+        resol_offset: 36
+        resol_bituse: 16
+        resol_factor: '0.1'
+
+    Solar_Pumpe_Drehzahl:
+        type: num
+        knx_dpt: 5
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+#        knx_send: 15/0/9
+#        knx_reply: 15/0/9
+        json_variable: 'Drehzahl Relais 1'
+        resol_offset: 26
+        resol_bituse: 7
+
+    Solar_Heizkreis_Ruecklauf_Absperrmotor_R5:
+        type: num
+        knx_dpt: 5
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+#        knx_send: 15/0/10
+#        knx_reply: 15/0/10
+        json_variable: 'Drehzahl Relais 5'
+        resol_offset: 30
+        resol_bituse: 7
+
+    Solar_COSMO_RMS_Mischer_zu_R7:
+        type: num
+        knx_dpt: 5
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+#        knx_send: 15/0/11
+#        knx_reply: 15/0/11
+        json_variable: 'Drehzahl Relais 7'
+        resol_offset: 32
+        resol_bituse: 7
+
+    Solar_COSMO_RMS_Mischer_auf_R6:
+        type: num
+        knx_dpt: 5
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+#        knx_send: 15/0/12
+#        knx_reply: 15/0/12
+        json_variable: 'Drehzahl Relais 6'
+        resol_offset: 31
+        resol_bituse: 7
+
+    Solar_Strahlungsfuehler_W_m2_CS10:
+        type: num
+        knx_dpt: 9
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+        knx_send: 15/0/13
+        knx_reply: 15/0/13
+        json_variable: 'Einstrahlung CS'
+        resol_offset: 20
+        resol_bituse: 15
+        resol_factor: 1
+
+    Solar_Status_Heizkreis:
+        type: bool
+        knx_dpt: 1
+        visu: 'yes'
+        visu_acl: ro
+        sqlite: 'yes'
+        cache: 'yes'
+        enforce_updates: 'true'
+#        knx_send: 15/0/14
+#        knx_reply: 15/0/14
+        json_variable: 'Status Heizkreis'
+        resol_offset: 46
+        resol_bituse: 16

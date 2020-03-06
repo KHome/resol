@@ -1,0 +1,10 @@
+%YAML 1.1
+---
+resol:
+    class_name: Resol
+    class_path: plugins.resol
+    ip: 192.168.178.111    # ip of VBUS LAN
+    cycle: 60
+    port: 7053    # port of VBUS LAN usualy is 7053!
+    password: xxx
+
