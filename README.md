@@ -1,10 +1,13 @@
 # resol
 
-Plugin to read Resol datalogger 
+SmarthomeNG-Plugin to read Resol datalogger: 
+http://www.resol.de/index/produktdetail/kategorie/4/id/8/sprache/de
+http://www.cosmo-info.de/fileadmin/user_upload/DL/COSMO-Solarregelung/COSMO-Multi.pdf
 
 ## Notes
 
-This plugin is still __under development__! The original author used this plugin
+This plugin is still __under development__! 
+Many thank @MARKOV
 
 ## Prerequisite
 
@@ -30,6 +33,9 @@ resol:
     port: 7053    # port of VBUS LAN usualy is 7053!
     password: xxx
 ```
+More information of resol parameter and sources, see here: https://danielwippermann.github.io/resol-vbus/vbus-packets.html
+Install Programm Resol Service Center to read offset und Bituse:
+- They are provided in XML by RESOL as part of the RSC (Resol Service Center) download. Just download, install (on linux use wine, it will work) and get the required file for your installation from: {Install_dir}/eclipse/plugins/de.resol.servicecenter.vbus.resol_2.0.0/ -
 
 ### items.yaml
 
