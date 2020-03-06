@@ -7,7 +7,8 @@ http://www.cosmo-info.de/fileadmin/user_upload/DL/COSMO-Solarregelung/COSMO-Mult
 ## Notes
 
 This plugin is still __under development__! 
-Many thank @MARKOV
+Many thanks to @MARKOV
+https://knx-user-forum.de/forum/supportforen/smarthome-py/919242-neues-plugin-resol-vbus-cosmo-multi-solarthermie-logging/page2
 
 ## Prerequisite
 
