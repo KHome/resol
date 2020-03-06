@@ -16,7 +16,7 @@ The following python packages need to be installed on your system:
 ```
 cd smarthome.py directory
 cd plugins
-git clone https://github.com/xxxxxxxx/resol.git
+git clone https://github.com/KHome/resol.git
 ```
 
 ### plugin.yaml
